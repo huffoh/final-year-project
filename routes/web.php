@@ -22,3 +22,7 @@ Route::get('/login', function () {
 Route::get('/medizoid', function () {
     return view('medizoid');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
