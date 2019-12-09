@@ -28,7 +28,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Medizoid
+                    <div><img src="/images/logo.png" alt=""></div>
                 </div>
 
             </div>
