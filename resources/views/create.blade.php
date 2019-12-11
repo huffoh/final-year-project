@@ -17,11 +17,11 @@
                         @csrf
                         <div class="form-group">
                             <label for="patientnumber">Patient Number</label>
-                            <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number">
+                            <input type="number" class="form-control" name="patient_id" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number">
                         </div>
                         <div class="form-group">
                             <label for="Appointmentdate">Appointment Date</label>
-                            <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter date">
+                            <input type="date" class="form-control" name="date" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter date">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

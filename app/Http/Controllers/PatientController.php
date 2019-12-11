@@ -39,7 +39,7 @@ class PatientController extends Controller
             'forename' => 'required',
             'surname' => 'required',
             'address' => 'required',
-            'phone number' => 'required|integer',
+            'phone_number' => 'required|integer',
 
         ]);
 
