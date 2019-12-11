@@ -25,10 +25,10 @@ Route::get('/medizoid', function () {
 
 Auth::routes();
 
-Route::resource('Patient', 'PatientController');
+Route::resource('/Patient', 'PatientController');
 
-Route::resource('Driver', 'DriverController');
+Route::resource('/Driver', 'DriverController');
 
-Route::resource('Appointment', 'AppointmentController');
+Route::resource('/Appointment', 'AppointmentController');
 
 Route::get('/home', 'HomeController@index')->name('home');

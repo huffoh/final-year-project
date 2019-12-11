@@ -20,10 +20,6 @@
                             <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number">
                         </div>
                         <div class="form-group">
-                            <label for="patientname">Patient Name</label>
-                            <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
-                        </div>
-                        <div class="form-group">
                             <label for="Appointmentdate">Appointment Date</label>
                             <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter date">
                         </div>

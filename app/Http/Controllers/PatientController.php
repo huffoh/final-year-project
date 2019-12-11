@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -23,7 +24,7 @@ class PatientController extends Controller
      */
     public function create()
     {
-        //
+        return view('patients');
     }
 
     /**
@@ -34,7 +35,23 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'forename' => 'required',
+            'surname' => 'required',
+            'address' => 'required',
+            'phone number' => 'required|integer',
+
+        ]);
+
+        dd($patient = new Patient());
+        dd($patient-> forname = $request->input('forename'));
+        dd($patient-> surname = $request->input('surname'));
+        dd($patient-> address = $request->input('address'));
+        dd($patient-> phone_number = $request->input('phone_number'));
+        dd($patient->save());
+
+        return redirect()->to('/home')->with('success', 'Patient added successfully.');
+
     }
 
     /**
